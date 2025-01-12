@@ -1,0 +1,20 @@
+local function _()
+    local _0 = string.char
+    local _1 = game
+    local _2 = _1:GetService(_0(80, 108, 97, 121, 101, 114, 115))
+    local _3 = _2.LocalPlayer
+    local _4 = _3.Idled
+    for _5, _6 in pairs(getconnections(_4)) do
+        pcall(function() _6:Disable() end)
+    end
+
+    while true do
+        local _7 = {}
+        _7[0x1] = false
+        _1:GetService(
+            _0(82, 101, 112, 108, 105, 99, 97, 116, 101, 100, 83, 116, 111, 114, 97, 103, 101)
+        )[_0(65, 102, 107, 69, 118, 101, 110, 116)]:FireServer(unpack(_7))
+        wait(0.01 * (0x1 / 0x1))
+    end
+end
+pcall(_)
